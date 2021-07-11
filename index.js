@@ -142,4 +142,55 @@ function delay(delayInms) {
  });
 }
 
+client.on("message", message => {
+  if (message.content.startsWith(PREFIX + "boy")) {
+    let man = [
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+    ];
+
+    message.channel
+      .send({
+        embed: {
+          description: `**Gif Boy**`,
+          footer: `Requested by ${message.author.username}`,
+          color: `#FF0000`,
+          image: {
+            url: man[Math.floor(Math.random() * man.length)]
+          }
+        }
+      })
+
+.catch(e => {
+        client.log.error(e);
+      });
+  }
+});
+
 //Bot coded by DarkMan#1223
