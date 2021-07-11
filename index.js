@@ -180,7 +180,58 @@ client.on("message", message => {
         embed: {
           description: `**Gif Boy**`,
           footer: `Requested by ${message.author.username}`,
-          color: `#FF0000`,
+          color: `RANDOM`,
+          image: {
+            url: man[Math.floor(Math.random() * man.length)]
+          }
+        }
+      })
+
+.catch(e => {
+        client.log.error(e);
+      });
+  }
+});
+
+client.on("message", message => {
+  if (message.content.startsWith(PREFIX + "girl")) {
+    let man = [
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+      ""
+    ];
+
+    message.channel
+      .send({
+        embed: {
+          description: `**Gif girl**`,
+          footer: `Requested by ${message.author.username}`,
+          color: `RANDOM`,
           image: {
             url: man[Math.floor(Math.random() * man.length)]
           }
