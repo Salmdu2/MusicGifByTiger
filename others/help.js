@@ -15,7 +15,7 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setImage(`https://cdn.discordapp.com/attachments/827166558714593290/830464718623080488/standard_8.gif`)
+    .setImage(`https://media.discordapp.net/attachments/794700880875749396/863890086278070282/standard.gif`)
     .setTitle(`**MoonBot Help**`)
     .setDescription(`
 
