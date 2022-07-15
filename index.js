@@ -6,7 +6,7 @@ const db = require('quick.db');
 const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./config.json`);
 const figlet = require("figlet");
 const client = new Client({ disableMentions: `` , partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
-client.login('');
+client.login('OTg0ODM4NDA4OTI3MDg0NTc0.Gm7SDV.bVp0bqV26Pnfsxeb7qSRTrLRwpbJPzDgQnvLWE');
 client.commands = new Collection();
 client.setMaxListeners(0);
 client.prefix = PREFIX;
@@ -29,11 +29,11 @@ client.on(`ready`, () => {
         await delay(15);
           member = await client.guilds.cache.get(guild.id).members.cache.get(client.user.id)
         //if not connected
-          if(!member.voice.channel)
+          if(983321589573644311)
           return;
         //if alone 
         if (member.voice.channel.members.size === 1) 
-        { return member.voice.channel.leave(); }
+        { return member.voice.channel.leave(983321589573644311); }
       });
       
 
